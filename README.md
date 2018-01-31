@@ -2,7 +2,7 @@
 
 This repository contains docker files used to build docker image for Plutus prototype.
 
-The purpose of this docker image is to provide a way to set up environement ready to use for practice Plutus programming.
+The purpose of this docker image is to provide a way to setup environment ready to use for practicing Plutus programming.
 
 You can review Plutus source code : [Plutus prototype source]
 
@@ -12,12 +12,14 @@ Plutus presentation and tutorial : [Plutus instruction]
 ### Requirements
 
   Only Docker is required to build and run the Cardano full node.
+  
   To install Docker follow those instructions :  [Install Docker].
   
 ### How to build Docker image
 
 First you need to build docker image from a docker file, docker file contains all instructions to download projects sources, dependencies and then builds the project binaries. 
 Build of docker image takes some time, be patient ...
+
 The docker image used to host cardano node is Ubuntu 16.04.
 
 ```sh
@@ -61,6 +63,7 @@ And load the Plutus demo.
 $> 
 ```
 You are know in the Plutus command line interface and can start writing you first contract.
+
 Enjoy !
 
 
