@@ -1,0 +1,15 @@
+FROM ubuntu:16.04
+
+RUN apt-get update &&\
+    apt-get install -y git curl bzip2 libssl-dev &&\
+    curl -sSL https://get.haskellstack.org/ | sh &&\
+    useradd -ms /bin/bash plutus &&\
+    su - plutus -c 'git clone https://github.com/input-output-hk/plutus-prototype.git /home/plutus/plutus-proto'  
+
+USER plutus
+ENV USER plutus
+
+WORKDIR /home/plutus/plutus-proto
+RUN stack install
+
+
