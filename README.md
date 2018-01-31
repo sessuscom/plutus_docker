@@ -1,8 +1,11 @@
  # Plutus prototype Docker 
 
 This repository contains docker files used to build docker image for Plutus prototype.
+
 The purpose of this docker image is to provide a way to set up environement ready to use for practice Plutus programming.
+
 You can review Plutus source code : [Plutus prototype source]
+
 Plutus presentation and tutorial : [Plutus instruction]
 
 
